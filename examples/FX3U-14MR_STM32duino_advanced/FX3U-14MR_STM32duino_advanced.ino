@@ -190,7 +190,7 @@ void loop() {
     retainVals.Val1 = ModbusRTUServer.holdingRegisterRead(0);
     retainVals.Val2 = ModbusRTUServer.holdingRegisterRead(1);
     retainVals.Val3 = ModbusRTUServer.holdingRegisterRead(2);
-    /// writeRetainEEPROM(); // Запиcь Retain в последнии секунды при отключении питания
+    writeRetainEEPROM(); // Запиcь Retain в последнии секунды при отключении питания
   }
   if (digitalRead(POWER_MONITORING_PIN) && poweroff) {
     Serial.println("--------------- Power ON ---------------");
