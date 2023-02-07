@@ -1,3 +1,3 @@
 Каталог содержит примеры использования периферии различных ПЛК FX в Arduino (STM32duino).
 
-STM32duinoBootloaderInit.h - содержит адреса и функцию программного вызова bootloaderInit() внутреннего загрузчика STM32.
+STM32duinoBootloaderInit.h - содержит адреса и функцию bootloaderInit() программного перехода во внутренний загрузчик STM32.
