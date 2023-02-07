@@ -192,6 +192,10 @@ void loop() {
     retainVals.Val3 = ModbusRTUServer.holdingRegisterRead(2);
     /// writeRetainEEPROM(); // Запиcь Retain в последнии секунды при отключении питания
   }
+  if (digitalRead(POWER_MONITORING_PIN) && poweroff) {
+    Serial.println("--------------- Power ON ---------------");
+    poweroff = false;     
+  }
   
   /* ------- Чтение RTC ------- */
   Serial.printf("%02d/%02d/%02d ", rtc.getDay(), rtc.getMonth(), rtc.getYear());
