@@ -76,7 +76,7 @@ void readRetainEEPROM() {
   }
   Serial.print("readRetainEEPROM(); sizeof(retainVals): " + String(sizeof(retainVals))+ "; bytes:");
   byte * pRetainVals = (byte *)&retainVals; // указатель на байты
-  for (unsigned i = 0; i < sizeof(retainVals); ++i, ++pRetainVals) { // читаем 50 байт из EEPROM начиная со стартового адреса
+  for (unsigned i = 0; i < sizeof(retainVals); ++i, ++pRetainVals) { // побайтное чтение из EEPROM начиная со стартового адреса
     *pRetainVals = si.i2c_read(false);
     Serial.print(" ");
     Serial.print(*pRetainVals);
@@ -95,7 +95,7 @@ void writeRetainEEPROM() {
   si.i2c_write(0); // Загрузка стартового адреса памяти в счетчик, первый байт
   si.i2c_write(0); // Загрузка стартового адреса памяти в счетчик, второй байт
   byte * pRetainVals = (byte *)&retainVals; // указатель на байты
-  for (unsigned int i = 0; i < sizeof(retainVals); ++i, ++pRetainVals) { // читаем 50 байт из EEPROM начиная со стартового адреса
+  for (unsigned int i = 0; i < sizeof(retainVals); ++i, ++pRetainVals) { // побайтная запись в EEPROM начиная со стартового адреса
     si.i2c_write(*pRetainVals); // send memory to device
   }
   si.i2c_stop(); // stop communication
@@ -148,7 +148,7 @@ void setup() {
   if (!si.i2c_init()) {
     Serial.println("I2C init failed");
   }
-  readRetainEEPROM(); // Чтение из EEPROM Retain значения
+  readRetainEEPROM(); // Чтение из EEPROM Retain переменных
   
   ModbusRTUServer.holdingRegisterWrite(0, retainVals.Val1); // Копируем Retain в HR Modbus
   ModbusRTUServer.holdingRegisterWrite(1, retainVals.Val2);
