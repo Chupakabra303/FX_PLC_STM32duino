@@ -1,5 +1,4 @@
 // MCU STM32F103VCT6
-
 #include "..\STM32duinoBootloaderInit.h"
 
 // Serial1 в этом проекте используется для отладки. См. setup();
