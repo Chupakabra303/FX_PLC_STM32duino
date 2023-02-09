@@ -1,3 +1,4 @@
+// MCU STM32F103VCT6
 #include "..\STM32duinoBootloaderInit.h"
 #include <SlowSoftI2CMaster.h> // https://github.com/felias-fogg/SlowSoftI2CMaster
 #include <ModbusRTUServer.h> // https://github.com/arduino-libraries/ArduinoModbus
