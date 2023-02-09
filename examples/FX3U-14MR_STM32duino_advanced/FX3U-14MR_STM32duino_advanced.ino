@@ -118,7 +118,7 @@ void setup() {
   
   /* ------------------- Дискретные входы ------------------- */
   pinMode(START_SWITCH_PIN, INPUT_PULLUP); // с внутренней подтяжкой к +3.3В
-  pinMode(X0_PIN, INPUT);
+  pinMode(X0_PIN, INPUT); // Внешняя подтяжка к +3.3В, инвертированная логика
   pinMode(X1_PIN, INPUT);  
   pinMode(X2_PIN, INPUT);
   pinMode(X3_PIN, INPUT);  
