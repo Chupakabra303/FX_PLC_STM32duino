@@ -1,5 +1,7 @@
 # ПЛК FX3U-14MR
 
-Подробая статья: https://habr.com/ru/post/713020/
+MCU: STM32F103VCT6 или клон
+
+Подробная статья: https://habr.com/ru/post/713020/
 
 Распиновку входов-выходов см. в примерах (examples).
