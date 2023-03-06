@@ -7,4 +7,4 @@ MCU: APM32F030C8T6 (STM32F030C8T6)
 + Функция перехода в загрузчик bootloaderInit()
 + Modbus RTU Slave на RS-485
 
-![изображение](https://user-images.githubusercontent.com/15260953/223090935-a22b0af7-b5e5-4504-a335-f4d62c1f44e1.png)
+![изображение](https://user-images.githubusercontent.com/15260953/223092672-065d2f09-4524-4442-b33d-3e18104184d0.png)
