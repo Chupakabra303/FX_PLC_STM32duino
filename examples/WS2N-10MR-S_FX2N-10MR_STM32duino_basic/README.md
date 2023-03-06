@@ -1,4 +1,4 @@
-Базовый пример на STM32duino для ПЛК WS2N-10MR-S (FX2N-10MR)
+# Базовый пример на STM32duino для ПЛК WS2N-10MR-S (FX2N-10MR)
 
 MCU: APM32F030C8T6 (STM32F030C8T6)
 
