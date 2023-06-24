@@ -1,6 +1,6 @@
 # Расширенный пример на STM32duino для ПЛК JL1N-10MT (FX1N-10MT)
 
-MCU: APM32F030C8T6 (STM32F030C8T6)
+MCU: STM32F103RCT6
 
 + DI/DO/AI/AO
 + Power monitor
